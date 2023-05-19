@@ -10,8 +10,8 @@ const EmailSheduleSchema=new mongoose.Schema({
         type:String,
         require:true
     },
-    SheduleTime:{
-        type:Date,
+    Shedule:{
+        type:String,
     },
 },{ timestamps: true });
 
