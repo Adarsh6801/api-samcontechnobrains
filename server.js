@@ -21,6 +21,11 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+//cors
+app.use(cors({
+  credentials:true,
+  origin:["http://localhost:4200"]
+}));
 
 // setup routes
 app.use('/user', userRouter);
